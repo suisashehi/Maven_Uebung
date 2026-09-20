@@ -1,0 +1,13 @@
+# Maven-Build-Ergebnisse - werden aus dem Quellcode neu erzeugt.
+target/
+
+# IDE
+*.iml
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Abgabe-Archiv wird bei Bedarf neu gepackt.
+*.zip

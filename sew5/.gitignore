@@ -1,0 +1,6 @@
+*.iml
+.idea/
+
+# Uebung 1: target/ enthaelt nur generierte Dateien (Klassen, JAR), die mvn
+# jederzeit neu bauen kann - solche Build-Ergebnisse gehoeren nicht ins Repo.
+target/

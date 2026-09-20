@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  UEBUNG 5 · pom_kaputt.xml mit allen vier behobenen Fehlern.
+  Die Korrekturen sind unten jeweils mit FIX markiert.
+  Geprueft mit: mvn -Dmaven.repo.local=<leerer Ordner> -U package  ->  BUILD SUCCESS
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+  <!-- FIX 2: modelVersion fehlte komplett, ist aber Pflicht. -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>at.htl.shkodra</groupId>
+  <artifactId>sew5</artifactId>
+  <!-- FIX 1: schliessendes </version> fehlte, Datei war kein gueltiges XML. -->
+  <version>0.1.0</version>
+
+  <properties>
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- FIX 3: hiess <dependancy>. -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <!-- FIX 4: hiess "Gson", der Artefaktname ist kleingeschrieben. -->
+      <artifactId>gson</artifactId>
+      <version>2.11.0</version>
+    </dependency>
+  </dependencies>
+
+</project>

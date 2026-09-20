@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  UEBUNG 5 · Fehlersuche.
+  In dieser Datei stecken VIER Fehler. Findet sie ohne Maven zu starten,
+  notiert sie, und prueft danach eure Liste, indem ihr die Datei als
+  pom.xml in ein Projekt legt und "mvn package" aufrufen laesst.
+
+  Nicht abschreiben: das hier ist absichtlich falsch.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+  <groupId>at.htl.shkodra</groupId>
+  <artifactId>sew5</artifactId>
+  <version>0.1.0
+
+  <properties>
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependancy>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>Gson</artifactId>
+      <version>2.11.0</version>
+    </dependancy>
+  </dependencies>
+
+</project>

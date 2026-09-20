@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Die Adresse dieses Projekts. Diese drei Angaben zusammen sind eindeutig. -->
+  <groupId>at.htl.shkodra</groupId>
+  <artifactId>sew5</artifactId>
+  <version>0.2.0</version>
+
+
+  <!-- Uebung 1: Java-Version und Encoding.
+       Ohne die Encoding-Zeile werden Umlaute und ë auf manchen Rechnern
+       zu Fragezeichen. -->
+  <properties>
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+
+  <!-- Uebung 4: Die Gson-Bibliothek, von search.maven.org kopiert. -->
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.11.0</version>
+    </dependency>
+
+    <!-- Hausuebung: Apache Commons Lang, ebenfalls von search.maven.org. -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.20.0</version>
+    </dependency>
+  </dependencies>
+
+</project>
